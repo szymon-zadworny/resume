@@ -1,0 +1,1 @@
+# Szymon Zadworny's resume
