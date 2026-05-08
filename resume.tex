@@ -56,6 +56,7 @@
 \name{Szymon}{Zadworny}
 \phone[mobile]{+48~721~602~902}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
 \email{zadworny.code@gmail.com}                               % optional, remove / comment the line if not wanted
+\address{}{Gdańsk, Poland}{}
 
 % Social icons
 \social[github]{szymon-zadworny}                              % optional, remove / comment the line if not wanted
@@ -79,48 +80,47 @@
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
 
+\section{Summary}
+Master's student in Informatics specializing in Linux systems programming, distributed computing and computer architecture. Developed communication and leadership skills through research projects and leading technical teams. Confident in my abilities, but always eager to learn new skills.
+
+
 \section{Education}  % for 'contemporary' style use optional argument for displaying an icon, e.g. \section[\faGraduationCap]{Education}
-\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}  % arguments 3 to 6 can be left empty
-\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
+\cventry{2025--Present}{Master of Engineering in Informatics}{Gdańsk University of Technology}{}{}{Specialization: Machine learning}  % arguments 3 to 6 can be left empty
+\cventry{2021--2025}{Bachelor of Engineering in Informatics}{Gdańsk University of Technology}{}{}{Specialization: Information and communications technology}
 
 \section{Master thesis}
-\cvitem{title}{\emph{Title}}
-\cvitem{supervisors}{Supervisors}
-\cvitem{description}{Short thesis abstract}
+\cvitem{Title}{\emph{Performance analysis of the Finite Element Method implementation in a Web Browser Environment}}
+\cvitem{Supervisor}{Marek Moszyński, PhD, DSc Eng.}
+\cvitem{Description}{Performance comparison of FEM implementations targeting native and WebAssembly environments with WebGPU acceleration.}
 
-\section{Experience}
-\subsection{Vocational}
-\cventry{year--year}{Job title}{Employer}{City}{}{General description no longer than 1--2 lines.\newline{}
-Detailed achievements:
+\section{Bachelor thesis}
+\cvitem{Title}{\emph{Application for anonymous exchange of information using the P2P communication model}}
+\cvitem{Supervisor}{Krzysztof Nowicki, PhD Eng.}
+\cvitem{Description}{Design and initial Rust-based implementation of a novel anonymizing P2P protocol. I proposed the subject of this thesis and led a team of 4.}
+
+\section{Extracurricular activities}
+\cventry{2024--Present}{President}{Vertex Computer Graphics Science Club}{}{}{Created the Rust WebGPU and C\texttt{++} Dynamic Analysis courses.}{}
+\cventry{2023--2024}{Vice-President}{Vertex Computer Graphics Science Club}{}{}{Assisted a team of 9 people during the Cyberiada 2024-2025 national game design competition.}{}
+
+\section{Notable Projects}
+\cventry{2024--Present}{Main Developer}{Extensible Object Network research project}{}{}{A zero-trust distributed database and protocol runtime. A direct continuation of my bachelor thesis.{}
 \begin{itemize}
-\item Achievement 1
-\item Achievement 2 (with sub-achievements)
-  \begin{itemize}
-  \item Sub-achievement (a);
-  \item Sub-achievement (b), with sub-sub-achievements (don't do this!);
-    \begin{itemize}
-    \item Sub-sub-achievement i;
-    \item Sub-sub-achievement ii;
-    \item Sub-sub-achievement iii;
-    \end{itemize}
-  \item Sub-achievement (c);
-  \end{itemize}
-\item Achievement 3
-\item Achievement 4
+\item Developed an inversion-of-control procedural macro framework on top of Rust libp2p.
+\item Created a custom Kubernetes cluster and a Kustomization-powered testing environment.
 \end{itemize}}
-\cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2\newline{}Description line 3}
-\subsection{Miscellaneous}
-\cventry{year--year}{Job title}{Employer}{City}{}{Description}
+
+\cventry{2025--Present}{Team Lead, Lead Software Architect}{Knot Smart}{}{}{A video game for the Cyberiada 2025-2026 national game design competition.{}
+\begin{itemize}
+\item Used Scrum practices alongside Kanban-based task management to effectively manage a team of 10 people.
+\item Established standardized code review practices and architecture guidelines.
+\item Used profiling and debugging tools to optimize hot code paths.
+\end{itemize}}
 
 \section{Languages}
-\cvitemwithcomment{Language 1}{Skill level}{Comment}
-\cvitemwithcomment{Language 2}{Skill level}{Comment}
-\cvitemwithcomment{Language 3}{Skill level}{Comment}
-\cvitemwithcomment{Language 4}{Skill level}{Comment}
+\cvitemwithcomment{Polish}{Native speaker}{}
+\cvitemwithcomment{English}{C1 Advanced}{(ACERT, Grade 5.0)}
 
-\section{Computer skills}
-\cvdoubleitem{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
-\cvdoubleitem{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
-\cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
-\cvtripleitem{category 4}{XYZ}{category 5}{XYZ}{category 6}{XYZ}
+\section{Programming languages and tools}
+\cvitem{Proficient in:}{safe Rust and async Rust, C++17, C, Bash, Python}
+\cvitem{Known tools:}{git, binutils, gdb, gprof, lldb, Nix, Kubernetes, CRI-O, Docker, Podman, Shadow}
 \end{document}
