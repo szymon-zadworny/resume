@@ -6,29 +6,11 @@
 % available at http://www.latex-project.org/lppl/.
 
 
-\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[11pt,a4paper,sans]{moderncv}
+\moderncvcolor{burgundy}
+\moderncvstyle[]{contemporary}
+\usepackage[hmargin=0.5in,vmargin=10pt]{geometry}
 
-\moderncvcolor{burgundy}                           % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'; for contemporary style use 'cerulean'
-% moderncv themes
-\moderncvstyle[]{contemporary}                     % style options are 'casual' (default), 'classic', 'banking', 'oldstyle', 'fancy' and 'contemporary'
-                                                   % the 'contemporary' style optionally takes the `qr` (default) or `noqr` options
-%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
-%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
-
-% adjust the page margins
-\usepackage[hmargin=0.5in,vmargin=10pt]{geometry}                  % the 'contemporary' style looks better with reduced margins; uncomment the line below for increased margin
-%\usepackage[scale=0.75]{geometry}
-%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
-%\setlength{\makecvheadnamewidth}{10cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
-%\setlength{\listitemsymbolspace}{10pt}            % set custom spacing between list symbol and text item (influences \cvlistitem and \cvlistdoubleitem)
-
-% the 'contemporary' style allows to append additional elements to the head background; uncomment and customize if needed
-%\def\@moderncvheadBackground{
-%}
-
-% font loading
-% for luatex and xetex, do not use inputenc and fontenc
-% see https://tex.stackexchange.com/a/496643
 \ifxetexorluatex
   \usepackage{fontspec}
   \usepackage{unicode-math}
@@ -38,54 +20,33 @@
   \setmonofont{Latin Modern Mono}
   \setmathfont{Latin Modern Math}
 
-  % you may also consider Fira Sans Light for a extra modern look
-  %\setsansfont[ItalicFont={Fira Sans Light Italic},%
-  %           BoldFont={Fira Sans},%
-  %           BoldItalicFont={Fira Sans Italic}]%
-  %           {Fira Sans Light}%
 \else
   \usepackage[utf8]{inputenc}
   \usepackage[T1]{fontenc}
   \usepackage{lmodern}
 \fi
 
-% document language
-\usepackage[english]{babel}  % FIXME: using spanish breaks moderncv
+\usepackage[english]{babel}
 
-% personal data
 \name{Szymon}{Zadworny}
-\phone[mobile]{+48~721~602~902}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
-\email{zadworny.code@gmail.com}                               % optional, remove / comment the line if not wanted
+\phone[mobile]{+48~721~602~902}
+\email{zadworny.code@gmail.com}
 \address{}{Gdańsk, Poland}{}
 
-% Social icons
-\social[github]{szymon-zadworny}                              % optional, remove / comment the line if not wanted
-\social[linkedin]{szymon-zadworny}                        % optional, remove / comment the line if not wanted
+\social[github]{szymon-zadworny}
+\social[linkedin]{szymon-zadworny}
 
-% bibliography adjustments (only useful if you make citations in your resume, or print a list of publications using BibTeX)
-%   to show numerical labels in the bibliography (default is to show no labels)
-%\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
 \renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}
-%   to redefine the bibliography heading string ("Publications")
-%\renewcommand{\refname}{Articles}
 
-% bibliography with multiple entries
-%\usepackage{multibib}
-%\newcites{book,misc}{{Books},{Others}}
-%----------------------------------------------------------------------------------
-%            content
-%----------------------------------------------------------------------------------
 \begin{document}
-%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
-%-----       resume       ---------------------------------------------------------
 \makecvtitle
 
 \section{Summary}
 Master's student in Informatics specializing in Linux systems programming, distributed computing and computer architecture. Developed communication and leadership skills through research projects and leading technical teams. Confident in my abilities, but always eager to learn new skills.
 
 
-\section{Education}  % for 'contemporary' style use optional argument for displaying an icon, e.g. \section[\faGraduationCap]{Education}
-\cventry{2025--Present}{Master of Engineering in Informatics}{Gdańsk University of Technology}{}{}{Specialization: Machine learning}  % arguments 3 to 6 can be left empty
+\section{Education}
+\cventry{2025--Present}{Master of Engineering in Informatics}{Gdańsk University of Technology}{}{}{Specialization: Machine learning}
 \cventry{2021--2025}{Bachelor of Engineering in Informatics}{Gdańsk University of Technology}{}{}{Specialization: Information and communications technology}
 
 \section{Master thesis}
