@@ -6,7 +6,7 @@
 % available at http://www.latex-project.org/lppl/.
 
 
-\documentclass[11pt,a4paper,sans]{moderncv}
+\documentclass[11pt,a4paper,sans,colorlinks=true]{moderncv}
 \moderncvcolor{burgundy}
 \moderncvstyle[]{contemporary}
 \usepackage[hmargin=0.5in,vmargin=10pt]{geometry}
@@ -39,7 +39,12 @@
 \renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}
 
 \begin{document}
+
+\hypersetup{urlcolor=white}
+
 \makecvtitle
+
+\hypersetup{urlcolor=burgundy}
 
 \section{Summary}
 Master's student in Informatics specializing in Linux systems programming, distributed systems and computer architecture. Developed communication and leadership skills through long-term research and technical projects. Confident in my abilities, but always eager to learn new skills.
@@ -60,17 +65,17 @@ Master's student in Informatics specializing in Linux systems programming, distr
 \cvitem{Description}{Design and initial Rust-based implementation of a novel anonymizing P2P protocol. I proposed the subject of this thesis and led a team of 4.}
 
 \section{Extracurricular activities}
-\cventry{2024--Present}{President}{Vertex Computer Graphics Science Club}{}{}{Created the Rust WebGPU and C\texttt{++} Dynamic Analysis courses.}{}
-\cventry{2023--2024}{Vice-President}{Vertex Computer Graphics Science Club}{}{}{Assisted a team of 9 people during the Cyberiada 2024-2025 national game design competition.}{}
+\cventry{2024--Present}{President}{Vertex Computer Graphics Science Club}{}{}{Created the \link[{\scriptsize \faLink} Rust WebGPU]{https://github.com/szymon-zadworny/vertex-webgpu-course-rs} and \link[{\scriptsize \faLink} C\texttt{++} Dynamic Analysis]{https://github.com/szymon-zadworny/cpp-on-painkillers} courses.}{}
+\cventry{2023--2024}{Vice-President}{Vertex Computer Graphics Science Club}{}{}{Assisted a team of 9 people during the \link[{\scriptsize \faLink} Cyberiada 2024-2025]{https://sebhe.itch.io/faster-than-scrap} national game design competition.}{}
 
 \section{Notable Projects}
-\cventry{2024--Present}{Main Developer}{Extensible Object Network research project}{}{}{A zero-trust distributed database and protocol runtime. A direct continuation of my bachelor thesis.{}
+\cventry{2024--Present}{Main Developer}{\link[{\scriptsize \faLink} Extensible Object Network]{https://github.com/szymon-zadworny/eon} research project}{}{}{A zero-trust distributed database and protocol runtime. A direct continuation of my bachelor thesis.{}
 \begin{itemize}
-\item Implemented an inversion of control procedural macro layer on top of the Rust libp2p library.
-\item Created a custom Kubernetes cluster and a Kustomization-powered testing environment.
+\item Implemented an \link[{\scriptsize \faLink} inversion of control procedural macro layer]{https://github.com/szymon-zadworny/eon/tree/master/libp2p-invert} on top of the Rust libp2p library.
+\item Created a custom Kubernetes cluster and a \link[{\scriptsize \faLink} Kustomization-powered testing environment]{https://github.com/szymon-zadworny/eon-k8s}.
 \end{itemize}}
 
-\cventry{2025--Present}{Team Lead, Lead Software Architect}{Knot Smart}{}{}{A video game for the Cyberiada 2025-2026 national game design competition.{}
+\cventry{2025--Present}{Team Lead, Lead Software Architect}{\link[{\scriptsize \faLink} Knot Smart]{https://github.com/Cyberiada2025-2026/Knot-Smart/}}{}{}{A video game for the Cyberiada 2025-2026 national game design competition.{}
 \begin{itemize}
 \item Effectively managed a team of 10 people using Kanban.
 \item Set code review standards and software architecture guidelines.
